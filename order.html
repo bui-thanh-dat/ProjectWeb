@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat's Cake blog</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+<header>
+        <img src="./images/—Pngtree—delicious cake big banner_1110087.jpg" alt="ảnh nền bánh kem">
+        <div id="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Products</a>
+                        <ul>
+                        <li><a href="./details-1.html">Classic Yellow Cake </a></li>
+                        <li><a href="./details-2.html">Coconut Bundt Cake </a></li>
+                        <li><a href="./details-3.html">Cream Cheese Pound Cake</a></li>
+                        <li><a href="./details-4.html">German Chocolate Cake </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./order.html">Order</a></li> 
+                </ul>
+            </nav>
+</header>
+<div class="main">
+    <h1 class="title">Order now</h1>
+    <form id="order" onsubmit="return false">
+        <div class="order-group">
+            <label for="order-cakename" class="order-lable">Cake name</label>
+            <select name="cake" id="order-list-cake" class="order-input">
+                <option value="">--- Select cake ---</option>
+                <option value="Classic Yellow Cake">Classic Yellow Cake</option>
+                <option value="Coconut Bundt Cake">Coconut Bundt Cake</option>
+                <option value="Cream Cheese Pound Cake">Cream Cheese Pound Cake</option>
+                <option value="German Chocolate Cake">German Chocolate Cake</option>
+            </select>
+        </div>
+        <p id="checkSelectCake"></p>
+        <div class="order-group">
+            <label  for="youname" class="order-lable" >Your Name</label>
+            <input type="text" id="youname" name="youname" class="order-input" onblur="takevalue()">
+        </div>  
+        <p id="checkName"></p>
+        <div class="order-group">
+            <label class="order-lable" for="message" >Message</label>
+            <input type="text" class="order-input" id="message" name="message" placeholder="type you text that write on the cake ... "> <br>
+        </div> 
+        <p id="checkMessage"></p>
+        <div class="order-group">
+            <label class="order-lable" for="includes">Includes</label> 
+            <div class="order-group-list">
+                <div class="choose">
+                    <input type="checkbox" class="accessories" name="cake1" value="Candle">
+                    <label class="choose-lable" for="cake1"> Candle</label>
+                </div>
+                <div class="choose">
+                    <input type="checkbox" class="accessories" name="cake2" value="Fireword">
+                    <label class="choose-lable" for="cake2"> Fireword</label>
+                </div>
+                <div class="choose">
+                    <input type="checkbox" class="accessories" name="cake3" value="Toys">
+                    <label class="choose-lable" for="cake3">Toys</label>
+                </div>
+            </div>
+        </div>  
+        <div class="order-group">
+            <label class="order-lable" for="date">Deliver date</label>
+            <input class="order-input" type="date" id="date" name="date">
+        </div>      
+        <p id="checkDate"></p>
+        <div class="order-group">
+            <label class="order-lable" for="dateto">Deliver to</label>
+            <textarea class="order-input" rows="9" cols="70" id="dateto" name="dateto"></textarea>
+        </div>  
+        <p id="checkDateto"></p>
+        <div class="order-group">
+            <label class="order-lable" for="Call">Call before deliver?</label>
+            <input type="radio" id="yes" class="radio" name="call">
+            <label class="title" for="yes">Yes</label>
+            <input type="radio" id="no" class="radio" name="call">
+            <label class="title" for="no">No</label> <br>
+        </div>  
+        <div class="order-group order-submit">
+            <label class="order-lable"></label>
+            <input  id="submit" type="submit" value="Order Now" onclick="submitOrder()">
+        </div>  
+    </form>
+</div>
+<footer>
+        <p>&copy; 2023 by Dat's Cake </p>
+</footer>
+<script src="./js/index2.js"></script>
+<script src="./js/responsive.js"></script>
+</body>
+</html>

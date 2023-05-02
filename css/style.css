@@ -1,0 +1,123 @@
+* {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:"Dancing Script";
+}
+html,body{
+    font-size: 120% ;
+    color :#DE9B7E;
+    background-color: #F8E5F0;
+    text-align: center;
+}
+header {
+    width : 100%;
+    height : 80px ;
+    background:#DE9B7E;
+    display : flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px ;
+}
+.toggle_btn{
+    display:none;
+    /* background-color: #F5DA98; */
+    color : #DE9B7E;
+    /* text-align: right; */
+    /* padding: 10px; */
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+header img{ 
+    width : 100%; 
+}
+.readMore{
+    color:#DE756D;
+}
+.nav-bar ul{
+    background-color: #F5DA98;
+    text-align: center ;
+    display:flex;
+    gap: 2 rem;
+}
+.nav-bar li{
+    width : 19% ;
+    border-right : 1px solid #CFDE7E ;
+    height : 60px;
+    line-height: 60px;
+    font-size : 110%;
+    display: inline-block;
+    margin-right: -4px ;
+}
+.nav-bar li:last-child {
+    border-right:none ;
+}
+.nav-bar li li{
+    border-right : none ;
+    font-size : 0.9em;
+}
+.nav-bar a{
+    color : #fff;
+    display:block;
+    padding-left: 15px ;
+    transition: 0.5s;
+}
+.nav-bar a:hover {
+    background-color : #CFDE7E;
+    color : #DE9B7E;
+    cursor :default;
+}
+.nav-bar>ul.li{
+    text-align:center ;
+}
+.nav-bar  ul li a {
+    /* padding-left :0 ; */
+    display: block;
+    color :#CFDE7E;
+    font-size: 20px;
+    padding : 10px 25px ;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin : 0 5px;
+}
+.nav-bar  ul li a:hover{
+    color :#CFDE7E;
+    background-color: #DE756D;
+}
+.nav-bar ul li a.active{
+    color:#CFDE7E;
+    background-color: #DE756D;
+}
+.nav-bar li ul {
+    position :absolute;
+    left :21.5%;
+    display : none ;
+    width : inherit ;
+}
+.nav-bar li:hover ul{
+    display:inline-block ;
+}
+.nav-bar li ul li {
+    display:inline ;
+}
+#main-menu{
+    display : flex ;
+}
+.nav-bar .active{
+    height: 450px;
+}
+.nav-bar.active ul{
+    opacity: 1;
+}
+footer{
+    background-color: #F5DA98;
+    height : 100px;
+    display: flex;
+}
+footer p {
+    margin:auto;
+    color : #DE9B7E ;
+    font-size : 90% ;
+}
