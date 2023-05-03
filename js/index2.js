@@ -26,6 +26,7 @@ function takevalue(){
         checkName.style.color = '#EE0000';
     }  
 }
+
 function notifyMessage(){
     const regexMessage = /^.{30,}$/;
     var getMessage = document.getElementById("message").value ;

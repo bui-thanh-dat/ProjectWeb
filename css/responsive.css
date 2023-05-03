@@ -1,30 +1,5 @@
 @media screen and (max-width:992px){
-    .nav-bar {
-        height : 450px;
-        position :absolute;
-        top:80px;
-        left :0 ;
-        right:0;
-        width: 100vw;
-        background-color: #F8E5F0;
-        transition :0.2s;
-        overflow: hidden;
-    }
-    .nav-bar li{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s ;
-        /* opacity: 0; */
-    }
-    .nav-bar ul li a{
-        margin-bottom: 12px;
-}
-    .toggle_btn{
-        cursor:pointer;
-        display: block;
-}
+    
 }
 @media screen and (max-width:768px) {
 

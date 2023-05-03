@@ -14,58 +14,76 @@
     <title>Dat's Cake blog </title>
 </head>
 <body>
-    <header>
-        <img src="./images/—Pngtree—delicious cake big banner_1110087.jpg" alt="ảnh nền bánh kem">
-        <div class="toggle_btn">
+    <header class="header">
+        <div class="wall">
+            <img class="wall-background" src="./images/—Pngtree—delicious cake big banner_1110087.jpg" alt="ảnh nền bánh kem">
+            <div class="wall-title">blog</div>
+            <div class="wall-name">Dat's Cake</div>
+        </div>
+       
+        <div class="toggle_btn" onclick="clickItem2()">
             <i class="fa fa-bars"></i>
         </div>
-            <nav class="nav-bar ">
-                <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="">Products</a>
-                        <ul>
-                        <li><a href="./details-1.html">Classic Yellow Cake </a></li>
-                        <li><a href="./details-2.html">Coconut Bundt Cake </a></li>
-                        <li><a href="./details-3.html">Cream Cheese Pound Cake</a></li>
-                        <li><a href="./details-4.html">German Chocolate Cake </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./order.html">Order</a></li> 
+        <ul class="navbar">
+            <li class="navbar-item"><a href="./index.html">Home</a></li>
+            <li class="navbar-item product">
+                <a class="product-icon" href="" onclick="clickItem()">Product</a>
+                <ul class="product-list">
+                    <li class="product-item"><a href="./details-1.html">Classic Yellow Cake </a></li>
+                    <li class="product-item"><a href="./details-2.html">Coconut Bundt Cake </a></li>
+                    <li class="product-item"><a href="./details-3.html">Cream Cheese Pound Cake</a></li>
+                    <li class="product-item"><a href="./details-4.html">German Chocolate Cake </a></li>
                 </ul>
-            </nav>
+            </li>
+            <li class="navbar-item"><a href="./about.html">About</a></li>
+            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="./order.html">Order</a></li>
+        </ul>
     </header>
-    <main>
-        <p>05/Jan</p>
-        <h2>Classic Yellow Cake With Chocolate Frosting </h2>
-        <img src="./images/chocalate-yellow.jpg" alt="Cake With Chocolate" width="350">
-        <p>This fluffy vanilla is the absolute best yellow from scratch and paired with the silky smooth chocolate frosting,
-             you can't beat it for a classic birthday cake or any other celebration </p>
-        <a class="readMore" href="./details-1.html">Read More</a>
-        <p>07/Jan</p>
-        <h2>Coconut Bundt Cake with White Chocolate-Coconut Glaze</h2>
-        <img src="./images/Coconut-Bundt-Cake.jpg" alt="Coconut Bundt Cake" width="350">
-        <p> Last week flew by and before I knew it, it was time to plan the menu for Sunday dinner.  
-            Sundays have been a perfect opportunity for me to experiment with new dessert recipes,<br> especially those that serve tons of people,
-             since we have help polishing it all off and don't have it tempting it sitting around the house, for days.</p>
-        <a class="readMore" href="./details-2.html">Read More</a>
-        <p>01/Feb</p>
-        <h2>Cream Cheese Pound Cake</h2>
-        <img src="./images/Cream-Cheese-Pound-Cake.jpg" alt="Cream Cheese Pound Cake" width="350">
-        <p>If you are looking for the perfect cream cheese pound cake recipe that tums out buttery mist, and dense each and every time, 
-            and this year und glee to ple easy cream cheese pound<br> cake will quickly become your reserve plain with a sprinkle of powdered sugar or  offer homemade whipped com</p>
-        <a class="readMore" href="./details-3.html">Read More</a>
-        <p>12/Feb</p>
-        <h2>German Chocolate Cake </h2>
-        <img src="./images/German-Chocolate-Cake.jpg" alt="German Chocolate Cake" width="350">
-        <p>I have long associated German Chocolate Cake with Father's Day, although I'm not entirely sure why. 
-            I think I remember my mom making it for my dad once or twice growing up <br>(although never on Father's Day, ironically)
-             and the correlation must have stuck somewhere along the way</p>
-        <a class="readMore" href="./details-4.html">Read More</a>
+    <main class="main">
+
+        <div class="main-card">
+            <p class="main-card_date">05/Jan</p>
+            <h2 class="main-card_title">Classic Yellow Cake With Chocolate Frosting </h2>
+            <img src="./images/chocalate-yellow.jpg" alt="Cake With Chocolate" width="350">
+            <p>This fluffy vanilla is the absolute best yellow from scratch and paired with the silky smooth chocolate frosting,
+                 you can't beat it for a classic birthday cake or any other celebration </p>
+            <a class="readMore" href="./details-1.html">Read More</a>
+        </div>
+
+        <div class="main-card">
+            <p class="main-card_date">07/Jan</p>
+            <h2 class="main-card_title">Coconut Bundt Cake with White Chocolate-Coconut Glaze </h2>
+            <img src="./images/Coconut-Bundt-Cake.jpg" alt="Coconut Bundt Cake" width="350">
+            <p> Last week flew by and before I knew it, it was time to plan the menu for Sunday dinner.  
+                Sundays have been a perfect opportunity for me to experiment with new dessert recipes,<br> especially those that serve tons of people,
+                 since we have help polishing it all off and don't have it tempting it sitting around the house, for days.</p>
+            <a class="readMore" href="./details-2.html">Read More</a>
+        </div>
+
+        <div class="main-card">
+            <p class="main-card_date">01/Feb</p>
+            <h2 class="main-card_title">Cream Cheese Pound Cake</h2>
+            <img src="./images/Cream-Cheese-Pound-Cake.jpg" alt="Cream Cheese Pound Cake" width="350">
+            <p>If you are looking for the perfect cream cheese pound cake recipe that tums out buttery mist, and dense each and every time, 
+                and this year und glee to ple easy cream cheese pound<br> cake will quickly become your reserve plain with a sprinkle of powdered sugar or  offer homemade whipped com</p>
+            <a class="readMore" href="./details-3.html">Read More</a>
+    
+        </div>
+
+        <div class="main-card">
+            <p class="main-card_date">12/Jan</p>
+            <h2 class="main-card_title">German Chocolate Cake</h2>
+            <img src="./images/German-Chocolate-Cake.jpg" alt="German Chocolate Cake" width="350">
+            <p>I have long associated German Chocolate Cake with Father's Day, although I'm not entirely sure why. 
+                I think I remember my mom making it for my dad once or twice growing up <br>(although never on Father's Day, ironically)
+                 and the correlation must have stuck somewhere along the way</p>
+            <a class="readMore" href="./details-4.html">Read More</a>
+        </div>
+
     </main>
-    <footer>
-        <p>&copy; 2023 by Dat's Cake</p>
+    <footer class="footer">
+        <p class="footer-text">&copy; 2023 by Dat's Cake</p>
     </footer>
     <script src="./js/responsive.js"></script>
 </body>
