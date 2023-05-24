@@ -1,15 +1,14 @@
-function clickItem(){
-    let x=document.getElementsByClassName("product-list")[0]
-    x.classList.toggle("display-menu")
-    // if(x.style.display=='none'){
-    //     x.classList.add("display-menu")
-    // } else {
-    //     x.classList.remove("display-menu")
-    // }
-}
+const hamburger = document.querySelector('.toggle_btn');
+const navLink = document.querySelector('.navbar');
 
-function clickItem2(){
-    let x=document.getElementsByClassName("navbar")[0]
-    x.classList.toggle("navbar-2")
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('open');
+});
 
-}
+const icon = document.querySelector('.product-icon');
+const navList = document.querySelector('.product-list');
+
+icon.addEventListener('click', () => {
+    navList.classList.toggle('open');
+})
+

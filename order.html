@@ -14,28 +14,34 @@
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-<header>
-        <img src="./images/—Pngtree—delicious cake big banner_1110087.jpg" alt="ảnh nền bánh kem">
-        <div id="toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+    <header class="header">
+        <div class="wall">
+            <div class="wall-background"> </div>
+            <img class="wall-background" src="./images/—Pngtree—delicious cake big banner_1110087.jpg" alt="ảnh nền bánh kem">
+            <div class="wall-title">blog</div>
+            <div class="wall-name">Dat's Cake</div>
         </div>
-            <nav>
-                <ul id="main-menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="">Products</a>
-                        <ul>
-                        <li><a href="./details-1.html">Classic Yellow Cake </a></li>
-                        <li><a href="./details-2.html">Coconut Bundt Cake </a></li>
-                        <li><a href="./details-3.html">Cream Cheese Pound Cake</a></li>
-                        <li><a href="./details-4.html">German Chocolate Cake </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./order.html">Order</a></li> 
+       
+        <div class="toggle_btn">
+            <i class="fa fa-bars"></i>
+        </div>
+        
+        <ul class="navbar">
+            <li class="navbar-item"><a href="./index.html">Home</a></li>
+            <li class="navbar-item product">
+                <a class="product-icon" href="#">Product  <i id="down" class="fas fa-sort-down"></i></a>
+                <ul class="product-list">
+                    <li class="product-item"><a class="product-links" href="./details-1.html">Classic Yellow Cake </a></li>
+                    <li class="product-item"><a class="product-links" href="./details-2.html">Coconut Bundt Cake </a></li>
+                    <li class="product-item"><a class="product-links" href="./details-3.html">Cream Cheese Pound Cake</a></li>
+                    <li class="product-item"><a class="product-links" href="./details-4.html">German Chocolate Cake </a></li>
                 </ul>
-            </nav>
-</header>
+            </li>
+            <li class="navbar-item"><a href="./about.html">About</a></li>
+            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="./order.html">Order</a></li>
+        </ul>
+    </header>
 <div class="main">
     <h1 class="title">Order now</h1>
     <form id="order" onsubmit="return false">
@@ -100,8 +106,8 @@
         </div>  
     </form>
 </div>
-<footer>
-        <p>&copy; 2023 by Dat's Cake </p>
+<footer class="footer">
+    <p class="footer-text">&copy; 2023 by Dat's Cake</p>
 </footer>
 <script src="./js/index2.js"></script>
 <script src="./js/responsive.js"></script>
